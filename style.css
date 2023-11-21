@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+body {
+  background: #ecf2f8;
+  min-height: 100vh;
+  display: flex;
+  align-items: center; }
+
+img {
+  max-width: 100%; }
+
+article {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16/6;
+  margin: 0 auto;
+  font-size: 13px;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  background: white;
+  border-radius: 1rem; }
+  article img.hero {
+    width: 40%; }
+  article .component-text {
+    padding: 1.5em 2em; }
+  article .title {
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #48556a; }
+  article .content {
+    color: #6d7f97;
+    letter-spacing: 1px;
+    line-height: 1.5; }
+  article footer {
+    padding: 1.5em 2em; }
+    article footer ul {
+      padding: 0;
+      display: flex;
+      list-style: none;
+      justify-content: space-around;
+      align-items: center; }
+      article footer ul .avatar {
+        height: 3em;
+        width: 3em;
+        border-radius: 50%;
+        overflow: hidden; }
+      article footer ul .author-name {
+        margin-right: auto;
+        margin-left: 1em; }
+      article footer ul .share-icon.outer {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #ecf2f8;
+        height: 3em;
+        width: 3em;
+        border-radius: 50%; }
+      article footer ul .share-icon.outer:hover .share-component {
+        display: block; }
+      article footer ul .date {
+        display: block; }
+
+.share-component {
+  display: none;
+  position: absolute;
+  left: -8em;
+  top: -7em; }
+  .share-component ul {
+    display: flex;
+    width: max-content;
+    gap: 1em;
+    background: #48556a;
+    border-radius: 1em;
+    padding: 0.25em 1.5em; }
+    .share-component ul img + img {
+      margin-left: 1em; }
+    .share-component ul .share-text {
+      text-transform: uppercase;
+      color: #ecf2f8;
+      letter-spacing: 3px;
+      font-weight: 300; }
+    .share-component ul .triangle {
+      position: absolute;
+      height: 0;
+      width: 0;
+      bottom: -2em;
+      border: 1em solid transparent;
+      border-top: 1em solid #48556a; }
+
+@media (max-width: 1200px) {
+  article footer ul .share-icon.outer {
+    position: static; }
+
+  article {
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%; }
+    article img.hero {
+      width: 100%; }
+
+  footer ul {
+    position: relative; }
+
+  .triangle {
+    display: none; }
+
+  .share-component {
+    display: none;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 1em;
+    left: -2em; }
+    .share-component ul {
+      display: flex;
+      height: 70px;
+      width: 100%;
+      gap: 1em;
+      background: #48556a;
+      padding: 0.25em 1.5em; }
+      .share-component ul img + img {
+        margin-left: 1em; }
+      .share-component ul .share-text {
+        text-transform: uppercase;
+        color: #ecf2f8;
+        letter-spacing: 3px;
+        font-weight: 300; }
+      .share-component ul .triangle {
+        position: absolute;
+        height: 0;
+        width: 0;
+        bottom: -2em;
+        border: 1em solid transparent;
+        border-top: 1em solid #48556a; } }
+
+/*# sourceMappingURL=style.css.map */
